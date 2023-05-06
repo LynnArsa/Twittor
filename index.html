@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
 
     <title>W3School</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/LynnArsa/Twittor/main/W3Schools_Logo.png">
@@ -22,7 +19,6 @@
             <div class="flex">
               <img class="h-12 w-12" src="https://raw.githubusercontent.com/LynnArsa/Twittor/main/W3Schools_Nav.png" alt="Workflow">
             </div>
-            <!-- <div class="hidden md:block"> -->
               <div class="ml-10 flex items-baseline space-x-4">
                 <a href="#" class="text-[#DDDDDD] hover:bg-[#04AA6D] px-5 py-2 text-lg">Tutorials</a>
                 <a href="#" class="text-[#DDDDDD] hover:bg-[#04AA6D] px-5 py-2 text-lg">References</a>
@@ -33,27 +29,52 @@
           </div>
       </div>
       </nav>
-    
 
     <div>
       <div class="bg-[#0D1721] p-20">
-        Learn to Code
+        <p class="text-white text-[70px] font-[700] text-center">Learn to Code</p>
+        <p class="text-[#FFC0C7] text-[23px] font-[700] text-center">With the world's largest web developer site.</p>
+        <input class="mx-auto flex items-center justify-center p-2 px-28 m-10 rounded-full" placeholder="Search our tutorials, e.g HTML">
+        
       </div>
       <div class="bg-[#D9EEE1] p-20 flex">
         <div class="p-6 flex-grow justify-content">
-          <p class="text-[100px] font-[700]">HTML</p>
-          <p>The language for building web pages</p>
-          <button>Learn HTML</button><br>
-          <button>Video Tutorial</button><br>
-          <button>HTML Reference</button><br>
-          <button>Get Certified</button>
+          <p class="text-[100px] font-[700] text-center">HTML</p>
+          <p class="font-semibold text-center py-2">The language for building web pages</p>
+          <div class="flex flex-col items-center justify-center">
+          <button class="bg-[#04AA6D] px-16 py-3 text-[#FFF] font-bold rounded-full mt-4">Learn HTML</button><br>
+          <button class="bg-[#FFF4A3] px-16 py-3 font-bold rounded-full">Video Tutorial</button><br>
+          <button class="bg-[#282A35] px-16 py-3 text-[#FFF] font-bold rounded-full">HTML Reference</button><br>
+          <button class="bg-[#FFC0C7] px-16 py-3 font-bold rounded-full">Get Certified</button>
+          </div>
         </div>
         <div class="p-6 flex-grow">
-          HTML
+  
+          <div class="p-5 bg-gray-800 rounded-lg">
+            <div class="bg-gray-900 text-white rounded-lg">
+              <div class="py-4 bg-gray-800 font-[600] text-[24px]">HTML Example :</div>
+              <pre class="p-4">
+                <code class="language-html text-[16px]">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;title&gt;HTML Tutorial&lt;/title&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                </code>
+              </pre>
+            </div>
+            <button class="bg-[#04AA6D] px-8 py-2 text-[#FFF] font-bold rounded-full my-4">Try it Yourself</button>
+          </div>
+          
         </div>
       </div>
       <div class="bg-[#FFF4A3] p-20">
-        <p class="text-[80px] font-[700]">CSS</p>
+        <p class="text-[80px] font-[700] ">CSS</p>
           <p>The language for styling web pages</p>
           <button>Learn CSS</button><br>
           <button>CSS Reference</button><br>

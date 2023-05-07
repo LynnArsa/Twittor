@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>W3Schools</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/LynnArsa/Twittor/main/W3Schools_Logo.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav class="bg-[#1d2a35] px-4">
+    <div class="mx-auto px-4">
+        <div class="flex items-center">
+            <img onclick="homePage()" class="h-12 w-12" src="https://raw.githubusercontent.com/LynnArsa/Twittor/main/W3Schools_Nav.png" alt="Workflow">
+            <div class="ml-10 flex space-x-4">
+                <div>
+                <button onclick="toggleDropdown1()" class="text-[#DDDDDD] hover:bg-[#04AA6D] px-5 py-6 text-lg">Tutorials</button>
+                <ul id="dropdown1" class="hidden absolute right-0 bg-[#282A35] rounded shadow-md py-1 w-screen h-screen text-center">
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn HTML</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn CSS</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn RWD</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn Bootstrap</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn W.3 CSS</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn Colors</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn Icons</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn Graphics</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn SVG</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn Canvas</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn How To</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn Sass</a></li>
+                </ul>
+                </div>
+                <div>
+                    <button onclick="toggleDropdown2()" class="text-[#DDDDDD] hover:bg-[#04AA6D] px-5 py-6 text-lg">References</button>
+                <ul id="dropdown2" class="hidden absolute right-0 bg-[#282A35] rounded shadow-md py-1 w-screen h-screen text-center">
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">HTML Tag Reference</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">HTML Browser Support</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">HTML Event Reference</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">HTML Color Reference</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">HTML Attribute Reference</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">HTML Canvas Reference</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn SVG Reference</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn Maps Reference</a></li>
+                </ul>
+                </div>
+                <button class="text-[#DDDDDD] hover:bg-[#04AA6D] px-5 py-2 text-lg">Exercises</button>
+                <button class="text-[#DDDDDD] hover:bg-[#04AA6D] px-5 py-2 text-lg">Bootcamp</button>
+                </div>
+            </div>
+            <div class="absolute inset-y-0 right-5">
+                <button class="bg-[#9763f6] text-[18px] py-3 text-[#FFF] font-bold rounded-full mt-4 w-32 mr-4">Upgrade</button>
+                <button class="bg-[#FFC0C7] text-[18px] py-3 font-bold rounded-full mt-4 w-36 mr-4">Get Certified</button>
+                <button class="bg-[#FFF4A3] text-[18px] py-3 font-bold rounded-full mt-4 w-48 mr-4">Create Website</button>
+                <button class="bg-[#04AA6D] text-[18px] py-3 text-[#FFF] font-bold rounded-full mt-4 w-32">Login</button>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="bg-[#0D1721] p-20">
+        <p class="text-white text-[52px] font-[700] text-center">Upgrade</p>
+        <p class="text-[#FFC0C7] text-[25px] font-semibold text-center mt-6 mb-8">To unlock powerful features:</p>
+        <p class="text-[#FFF] text-[20px] font-semibold text-center">Browse W3Schools without ads</p>
+        <p class="text-[#FFF] text-[20px] font-semibold text-center">Website hosting (Includes <u>Spaces</u> PRO)</p>
+        <p class="text-[#FFF] text-[20px] font-semibold text-center mb-12">Access to our <u>HTML Video Tutorial</u></HTML></p>
+        <button class="bg-[#04AA6D] text-[21px] px-[100px] py-[14px] text-[#FFF] font-bold rounded-full my-4 flex mx-auto">Subscribe for $4.99/Month</button>
+    </div>
+<div class="bg-[#0D1721] px-24"> 
+<div class="flex flex-row">
+    <div>
+        <div class="bg-[#F3ECEA] p-12 m-12 text-center rounded-lg">
+            <p class="text-[45px] font-bold">No More Ads</p>
+            <p class="text-[18px] font-semibold pt-4 pb-16">Learn without any distractions</p>
+            <img class="h-12 flex mx-auto my-auto" src="https://www.w3schools.com/pro/img_noads.png">
+        </div>
+    </div>
+    <div>
+        <div class="bg-[#D9EEE1] p-12 m-12 text-center rounded-lg">
+            <p class="text-[45px] font-bold">More Spaces!</p>
+            <p class="text-[18px] font-semibold pt-4 pb-16">Unlock the option to create more W3Schools Spaces</p>
+            <img class="h-12 flex mx-auto" src="https://www.w3schools.com/pro/img_spaces.png">
+        </div>
+    </div>
+</div>
+<div class="flex flex-row">
+    <div>
+        <div class="bg-[#96D4D4] p-12 m-12 text-center rounded-lg">
+            <p class="text-[45px] font-bold">HTML Video</p>
+            <p class="text-[18px] font-semibold pt-4 pb-16">Get full access to W3Schools HTML Video</p>
+            <img class="h-12 flex mx-auto" src="https://www.w3schools.com/pro/img_video.png">
+        </div>
+    </div>
+    <div>
+        <div class="bg-[#FFF4A3] p-12 m-12 text-center rounded-lg">
+            <p class="text-[45px] font-bold">Hosting Benefits!</p>
+            <p class="text-[18px] font-semibold pt-4 pb-16">Gain more storage and expand your monthly limitations</p>
+            <img class="h-12 flex mx-auto" src="https://www.w3schools.com/pro/img_benefits.png">
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

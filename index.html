@@ -4,31 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <link rel="stylesheet" href="style.css"> -->
-
-    <title>W3School</title>
+    <title>W3Schools</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/LynnArsa/Twittor/main/W3Schools_Logo.png">
     
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
-    <nav class="bg-[#1d2a35] p-4">
+    <nav class="bg-[#1d2a35] px-4">
       <div class="mx-auto px-4">
           <div class="flex items-center">
-            <div class="flex">
-              <img class="h-12 w-12" src="https://raw.githubusercontent.com/LynnArsa/Twittor/main/W3Schools_Nav.png" alt="Workflow">
-            </div>
-              <div class="ml-10 flex items-baseline space-x-4">
-                <a href="#" class="text-[#DDDDDD] hover:bg-[#04AA6D] px-5 py-2 text-lg">Tutorials</a>
-                <a href="#" class="text-[#DDDDDD] hover:bg-[#04AA6D] px-5 py-2 text-lg">References</a>
-                <a href="#" class="text-[#DDDDDD] hover:bg-[#04AA6D] px-5 py-2 text-lg">Exercises</a>
-                <a href="#" class="text-[#DDDDDD] hover:bg-[#04AA6D] px-5 py-2 text-lg">Bootcamp</a>
+              <img onclick="homePage()" class="h-12 w-12" src="https://raw.githubusercontent.com/LynnArsa/Twittor/main/W3Schools_Nav.png" alt="Workflow">
+              <div class="ml-10 flex space-x-4">
+                <div>
+                  <button onclick="toggleDropdown1()" class="text-[#DDDDDD] hover:bg-[#04AA6D] px-5 py-6 text-lg">Tutorials</button>
+                  <ul id="dropdown1" class="hidden absolute right-0 bg-[#282A35] rounded shadow-md py-1 w-screen h-screen text-center">
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn HTML</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn CSS</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn RWD</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn Bootstrap</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn W.3 CSS</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn Colors</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn Icons</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn Graphics</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn SVG</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn Canvas</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn How To</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn Sass</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <button onclick="toggleDropdown2()" class="text-[#DDDDDD] hover:bg-[#04AA6D] px-5 py-6 text-lg">References</button>
+                  <ul id="dropdown2" class="hidden absolute right-0 bg-[#282A35] rounded shadow-md py-1 w-screen h-screen text-center">
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">HTML Tag Reference</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">HTML Browser Support</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">HTML Event Reference</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">HTML Color Reference</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">HTML Attribute Reference</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">HTML Canvas Reference</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn SVG Reference</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-white hover:bg-gray-100">Learn Maps Reference</a></li>
+
+                  </ul>
+                </div>
+                <button class="text-[#DDDDDD] hover:bg-[#04AA6D] px-5 py-2 text-lg">Exercises</button>
+                <button class="text-[#DDDDDD] hover:bg-[#04AA6D] px-5 py-2 text-lg">Bootcamp</button>
               </div>
             </div>
+            <div class="absolute inset-y-0 right-5">
+              <button onclick="upgradePage()" class="bg-[#9763f6] text-[18px] py-3 text-[#FFF] font-bold rounded-full mt-4 w-32 mr-4">Upgrade</button>
+              <button class="bg-[#FFC0C7] text-[18px] py-3 font-bold rounded-full mt-4 w-36 mr-4">Get Certified</button>
+              <button class="bg-[#FFF4A3] text-[18px] py-3 font-bold rounded-full mt-4 w-48 mr-4">Create Website</button>
+              <button class="bg-[#04AA6D] text-[18px] py-3 text-[#FFF] font-bold rounded-full mt-4 w-32">Login</button>
+            </div>
           </div>
-      </div>
-      </nav>
+    </nav>
 
 <!-- Learn to Code -->
       <div class="bg-[#0D1721] p-20">
@@ -288,10 +318,6 @@ WHERE Country='Mexico';
   <img src="https://www.w3schools.com/how-spaces-works3.png" class="mx-auto py-9">
   <button class="bg-[#04AA6D] text-[21px] px-[100px] py-[14px] text-[#FFF] font-bold rounded-full my-4 flex mx-auto">Learn More</button>
 </div>
-
-<!-- <div class="flex justify-center">
-  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-auto">Button</button>
-</div> -->
 
 <!-- End of W3School Spaces -->
 
